@@ -16,6 +16,21 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/domain/*": [
+        "./src/domain/*"
+      ],
+      "@/infra/*": [
+        "./src/infra/*"
+      ],
+      "@/core/*": [
+        "./src/core/*"
+      ],
+      "@/test/*": [
+        "./test/*"
+      ]
+    },
+    "resolveJsonModule": true
   }
 }
