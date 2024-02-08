@@ -1,9 +1,10 @@
 import { CreateUser } from "./create-user";
 
+import { UserExists } from "./errors/user-exists";
+
 import { FakeHasher } from "@/test/cryptography/fake-hasher";
 import { makeUser } from "@/test/factories/user-factory";
 import { InMemoryUsersRepository } from "@/test/repositories/in-memory-users.repository";
-import { UserExists } from "./errors/user-exists";
 
 let inMemoryUsersRepository: InMemoryUsersRepository,
   createUser: CreateUser,
