@@ -33,6 +33,10 @@ export class InMemoryUsersRepository implements UserRepository {
   }
 
   async save(user: User): Promise<void> {
-    throw new Error("Method not implemented.");
+    const userIndex = this.users.findIndex(item => item.id.equals(user.id));
+
+    if (userIndex >= 0) {
+      this.users[userIndex] = user;
+    }
   }
 }

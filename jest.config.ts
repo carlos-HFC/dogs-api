@@ -19,7 +19,7 @@ const config: Config = {
   collectCoverageFrom: [
     "**/*.(t|j)s"
   ],
-  coverageDirectory: "../coverage",
+  coverageDirectory: "<rootDir>/coverage/",
   testEnvironment: "node"
 };
 

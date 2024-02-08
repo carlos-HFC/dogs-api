@@ -1,5 +1,5 @@
 export class EqualOldPassword extends Error {
   constructor() {
-    super("New password is equal the current password.")
+    super("New password can not be equal than current password.");
   }
 }
